@@ -5,565 +5,383 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <title>LOG IN</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <title>Login & Registration Form </title>
 </head>
 
-<body>
-     <div class="wrapper">
-          <form action="#">
-               <h2>Login</h2>
-               <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your email</label>
-               </div>
-               <div class="input-field">
-                    <input type="password" class="password" placeholder="Enter your password">
-                    <i class="uil uil-eye-slash showHidePw"></i>
-               </div>
-               <div class="forget">
-                    <label for="remember">
-                         <input type="checkbox" id="remember">
-                         <p>Remember me</p>
-                    </label>
-                    <a href="#">Forgot password?</a>
-               </div>
-               <button type="submit">Log In</button>
-               <div class="register">
-                    <p>Don't have an account? <a href="#">Register</a></p>
-               </div>
-          </form>
+<br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <a href="index.html">
+               <button type="button" class="submit">Login</button>
+            </a>
+         
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Phone Number</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <label>
+                    <span>Confirm Password</span>
+                    <input type="password" />
+                </label>
+                <a href="welcome.html">
+                    <button type="button" class="submit">Sign Up</button>
+               </a>
+            </div>
+        </div>
+    </div>
 
-
-          <!-- Registration Form -->
-          <form action="#">
-               <h2>Registration</h2>
-               <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your first name</label>
-               </div>
-               <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your last name</label>
-               </div>
-               <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your email</label>
-               </div>
-               <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your number</label>
-               </div>
-               <div class="input-field">
-                    <input type="password" class="password" placeholder="Enter your password">
-                    <i class="uil uil-eye-slash showHidePw"></i>
-               </div>
-               <div class="input-field">
-                    <input type="password" class="password" placeholder="Confirm your password">
-                    <i class="uil uil-eye-slash showHidePw"></i>
-               </div>
-               <button type="submit">Register</button>
-               <div class="register">
-                    <p>Already have an account? <a href="#">Login now</a></p>
-               </div>
-          </form>
-     </div>
-
-     <script src="script.js"></script>
-
-</body>
-
-</html>
-<!-- <body>
-     <div class = "bekas">
-          <div class="title">Registration</div>
-          <form action="#">
-               <div class="user-details">
-                    <div class="input-box">
-                         <span class="details">First Name</span>
-                         <input type="text" placeholder="Enter your first name" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Last Name</span>
-                         <input type="text" placeholder="Enter your last name" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Username</span>
-                         <input type="text" placeholder="Enter your username" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Email</span>
-                         <input type="text" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Phone Number</span>
-                         <input type="text" placeholder="Enter your number" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Password</span>
-                         <input type="text" placeholder="Enter your password" required>
-                    </div>
-
-                    <div class="input-box">
-                         <span class="details">Confirm Password</span>
-                         <input type="text" placeholder="Confirm your password" required>
-                    </div>
-               </div>
-               <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1">
-                    <input type="radio" name="gender" id="dot-2">
-                    <input type="radio" name="gender" id="dot-3">
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                         <label for="dot-1">
-                              <span class="dot one"></span>
-                              <span class="gender">Male</span>
-                         </label>
-                         <label for="dot-2">
-                              <span class="dot two"></span>
-                              <span class="gender">Female</span>
-                         </label>
-                         <label for="dot-3">
-                              <span class="dot three"></span>
-                              <span class="gender">Prefer not to say</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="button">
-                    <input type="submit" value="Register">
-               </div>
-          </form>
-
-     </div>
-</body> -->
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
 
 <style>
-     @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+     *,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-     * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Open Sans", sans-serif;
-     }
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-image: url(assets/img/sport/sportscomplex.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background-position: center;
+    background-size: cover;
+}
 
-     body {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          width: 100%;
-          padding: 0 10px;
-     }
+input,
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
 
-     body::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: url("assets/img/sport/sportscomplex.jpg"), #000;
-          background-position: center;
-          background-size: cover;
-     }
+.tip {
+    font-size: 20px;
+    margin: 40px auto 50px;
+    text-align: center;
+}
 
-     .wrapper {
-          width: 400px;
-          border-radius: 8px;
-          padding: 30px;
-          text-align: center;
-          border: 1px solid rgba(255, 255, 255, 0.5);
-          backdrop-filter: blur(9px);
-          -webkit-backdrop-filter: blur(9px);
-     }
+.cont {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 0 auto 100px;
+    background: #fff;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+}
 
-     form {
-          display: flex;
-          flex-direction: column;
-     }
+.form {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+    padding: 50px 30px 0;
+}
 
-     h2 {
-          font-size: 2rem;
-          margin-bottom: 20px;
-          color: #fff;
-     }
+.sub-cont {
+    overflow: hidden;
+    position: absolute;
+    left: 640px;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    padding-left: 260px;
+    background: #fff;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
 
-     .input-field {
-          position: relative;
-          border-bottom: 2px solid #ccc;
-          margin: 15px 0;
-     }
+.cont.s--signup .sub-cont {
+    -webkit-transform: translate3d(-640px, 0, 0);
+    transform: translate3d(-640px, 0, 0);
+}
 
-     .input-field i {
-          position: absolute;
-          top: 50%;
+button {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
 
-          transform: translateY(-50%);
-          color: white;
-          font-size: 23px;
-          transition: 0.15s ease;
-     }
+.img {
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 360px;
+}
 
-     .input-field i.icon {
-          left: 0;
-     }
+.img:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    background-image: url("ext.jpg");
+    opacity: .8;
+    background-size: cover;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
 
-     .input-field i.showHidePw {
-          right: 0;
-     }
+.img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
 
-     .input-field label {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
-          color: #fff;
-          font-size: 16px;
-          pointer-events: none;
-          transition: 0.15s ease;
-     }
+.cont.s--signup .img:before {
+    -webkit-transform: translate3d(640px, 0, 0);
+    transform: translate3d(640px, 0, 0);
+}
 
-     .input-field input {
-          width: 100%;
-          height: 40px;
-          background: transparent;
-          border: none;
-          outline: none;
-          font-size: 16px;
-          color: #fff;
-     }
+.img__text {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
 
-     .input-field ::placeholder {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
-          color: #fff;
-          font-size: 16px;
-          pointer-events: none;
-          transition: 0.15s ease;
-     }
+.img__text h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
 
-     .input-field input:focus~label,
-     .input-field input:valid~label {
-          font-size: 0.8rem;
-          top: 10px;
-          transform: translateY(-120%);
-     }
+.img__text p {
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-     .forget {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin: 25px 0 35px 0;
-          color: #fff;
-     }
+.cont.s--signup .img__text.m--up {
+    -webkit-transform: translateX(520px);
+    transform: translateX(520px);
+}
 
-     #remember {
-          accent-color: #fff;
-     }
+.img__text.m--in {
+    -webkit-transform: translateX(-520px);
+    transform: translateX(-520px);
+}
 
-     .forget label {
-          display: flex;
-          align-items: center;
-     }
+.cont.s--signup .img__text.m--in {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
 
-     .forget label p {
-          margin-left: 8px;
-     }
+.img__btn {
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    width: 100px;
+    height: 36px;
+    margin: 0 auto;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
 
-     .wrapper a {
-          color: #efefef;
-          text-decoration: none;
-     }
+.img__btn:after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
 
-     .wrapper a:hover {
-          text-decoration: underline;
-     }
+.img__btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 1.2s;
+    transition: -webkit-transform 1.2s;
+    transition: transform 1.2s;
+    transition: transform 1.2s, -webkit-transform 1.2s;
+}
 
-     button {
-          background: #fff;
-          color: #000;
-          font-weight: 600;
-          border: none;
-          padding: 12px 20px;
-          cursor: pointer;
-          border-radius: 3px;
-          font-size: 16px;
-          border: 2px solid transparent;
-          transition: 0.3s ease;
-     }
+.img__btn span.m--in {
+    -webkit-transform: translateY(-72px);
+    transform: translateY(-72px);
+}
 
-     button:hover {
-          color: #fff;
-          border-color: #fff;
-          background: rgba(255, 255, 255, 0.15);
-     }
+.cont.s--signup .img__btn span.m--in {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
 
-     .register {
-          text-align: center;
-          margin-top: 30px;
-          color: #fff;
-     }
+.cont.s--signup .img__btn span.m--up {
+    -webkit-transform: translateY(72px);
+    transform: translateY(72px);
+}
+
+h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+label span {
+    font-size: 12px;
+    color: #b6b6b6;
+    text-transform: uppercase;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.forgot-pass {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #b6b6b6;
+}
+
+.submit {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #d4af7a;
+    text-transform: uppercase;
+    border: none;
+}
+
+.fb-btn {
+    border: 2px solid #d3dae9;
+    color: #8fa1c7;
+}
+
+.fb-btn span {
+    font-weight: bold;
+    color: #455a81;
+}
+
+.sign-in {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    
+}
+
+.cont.s--signup .sign-in {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    -webkit-transform: translate3d(640px, 0, 0);
+    transform: translate3d(640px, 0, 0);
+}
+
+.sign-up {
+    -webkit-transform: translate3d(-900px, 0, 0);
+    transform: translate3d(-900px, 0, 0);
+}
+
+.cont.s--signup .sign-up {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 </style>
-
-<!-- <style>
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background: url("assets/img/sport/sportscomplex.jpg"), url("assets/img/sport/black.jpg") no-repeat center;
-  background-size: cover;
-  position: relative;
-}
-.bekas{
-  max-width: 700px;
-  width: 100%;
-  background-color: #fff;
-  padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-}
-.bekas .title{
-  font-size: 25px;
-  font-weight: 500;
-  position: relative;
-}
-.bekas .title::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  border-radius: 5px;
-  background: linear-gradient(135deg, #000000, #b6a259);
-  
-}
-.bekas form .user-details{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
-}
-form .user-details .input-box{
-  margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
-}
-form .input-box span.details{
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-.user-details .input-box input{
-  height: 45px;
-  width: 100%;
-  outline: none;
-  font-size: 16px;
-  border-radius: 5px;
-  padding-left: 15px;
-  border: 1px solid #ccc;
-  border-bottom-width: 2px;
-  transition: all 0.3s ease;
-}
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
-  border-color: #b6a259;
-}
- form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
- }
- form .category{
-   display: flex;
-   width: 80%;
-   margin: 14px 0 ;
-   justify-content: space-between;
- }
- form .category label{
-   display: flex;
-   align-items: center;
-   cursor: pointer;
- }
- form .category label .dot{
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background: #d9d9d9;
-  border: 5px solid transparent;
-  transition: all 0.3s ease;
-}
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #b6a259;
-   border-color: #d9d9d9;
- }
- form input[type="radio"]{
-   display: none;
- }
- form .button{
-   height: 45px;
-   margin: 35px 0
- }
- form .button input{
-   height: 100%;
-   width: 100%;
-   padding: 8px 25px;
-   border-radius: 50px;
-   border: 2px solid #cda45e;
-   text-transform: uppercase;
-   color: #fff;
-   font-size: 13px;
-   font-weight: 500;
-   letter-spacing: 1px;
-   transition: 0.3s;
-   background-color: black;
- }
- form .button input:hover{
-  /* transform: scale(0.99); */
-  background: #cda45e;
-  color: #fff;
-}
- @media(max-width: 584px){
- .bekas{
-  max-width: 100%;
-}
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  form .category{
-    width: 100%;
-  }
-  .content form .user-details{
-    max-height: 300px;
-    overflow-y: scroll;
-  }
-  .user-details::-webkit-scrollbar{
-    width: 5px;
-  }
-  }
-  @media(max-width: 459px){
-  .bekas .content .category{
-    flex-direction: column;
-  }
-}
-</style> -->
-<!-- <form action="action_page.php" method="post">
-          <div class="imgcontainer">
-               <img src="img_avatar2.png" alt="Avatar" class="avatar">
-          </div>
-
-          <div class="container">
-               <label for="uname"><b>Username</b></label>
-               <input type="text" placeholder="Enter Username" name="uname" required>
-
-               <label for="psw"><b>Password</b></label>
-               <input type="password" placeholder="Enter Password" name="psw" required>
-
-               <button type="submit">Login</button>
-               <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-               </label>
-          </div>
-
-          <div class="container" style="background-color:#f1f1f1">
-               <button type="button" class="cancelbtn">Cancel</button>
-               <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-     </form>
-
-      //Styles
-     <style>
-          /* Bordered form */
-          form {
-               border: 3px solid #f1f1f1;
-          }
-
-          /* Full-width inputs */
-          input[type=text],
-          input[type=password] {
-               width: 100%;
-               padding: 12px 20px;
-               margin: 8px 0;
-               display: inline-block;
-               border: 1px solid #ccc;
-               box-sizing: border-box;
-          }
-
-          /* Set a style for all buttons */
-          button {
-               background-color: #04AA6D;
-               color: white;
-               padding: 14px 20px;
-               margin: 8px 0;
-               border: none;
-               cursor: pointer;
-               width: 100%;
-          }
-
-          /* Add a hover effect for buttons */
-          button:hover {
-               opacity: 0.8;
-          }
-
-          /* Extra style for the cancel button (red) */
-          .cancelbtn {
-               width: auto;
-               padding: 10px 18px;
-               background-color: #f44336;
-          }
-
-          /* Center the avatar image inside this container */
-          .imgcontainer {
-               text-align: center;
-               margin: 24px 0 12px 0;
-          }
-
-          /* Avatar image */
-          img.avatar {
-               width: 40%;
-               border-radius: 50%;
-          }
-
-          /* Add padding to containers */
-          .container {
-               padding: 16px;
-          }
-
-          /* The "Forgot password" text */
-          span.psw {
-               float: right;
-               padding-top: 16px;
-          }
-
-          /* Change styles for span and cancel button on extra small screens */
-          @media screen and (max-width: 300px) {
-               span.psw {
-                    display: block;
-                    float: none;
-               }
-
-               .cancelbtn {
-                    width: 100%;
-               }
-          }
-     </style>
-
-</head> -->
